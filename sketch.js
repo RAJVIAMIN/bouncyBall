@@ -21,9 +21,8 @@ function setup(){
         restitution: 1.0
     }
 
-    ball = Bodies.circle(200,100,20, ball_options);
-    World.add(world,ball);
-
+ball = Bodies.circle(200,100,20,ball_options);
+World.add(world,ball)
     console.log(ground);
 }
 
@@ -34,5 +33,5 @@ function draw(){
     rect(ground.position.x,ground.position.y,400,20);
 
     ellipseMode(RADIUS);
-    ellipse(ball.position.x, ball.position.y, 20, 20);
+    ellipse(ball.position.x,ball.position.y,20,20);
 }
